@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  align-items: center;
+  &__cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    img {
+      position: relative;
+      width: 35px;
+      height: 45px;
+      z-index: 2;
+    }
+    .active {
+      display: block;
+      overflow: visible;
+      width: 400px;
+      height: 45px;
+      transition: 0.3s ease-out;
+      background-color: rgb(42, 42, 42);
+      border-radius: 20px;
+
+      .contentActive {
+        input {
+          font-weight: 400;
+          font-size: 16px;
+          padding: 13px;
+          margin-left: 20px;
+          color: white;
+
+          width: 100%;
+          &::placeholder {
+            color: white;
+            font-weight: 400;
+          }
+        }
+      }
+      .cross {
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        margin-left: 5px;
+      }
+    }
+    .inActive {
+      display: none;
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 735px) {
+  .container {
+    display: flex;
+    align-items: center;
+    &__cont {
+      position: static;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      img {
+        position: relative;
+        width: 35px;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .active {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        overflow: visible;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 10px;
+        background-color: rgb(12, 12, 12);
+        border-radius: 0px;
+
+        .cross {
+          position: absolute;
+          width: 20px;
+          height: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .contentActive {
+          background-color: rgb(42, 42, 42);
+          width: 100%;
+          transition: 0.3s ease-out;
+
+          border-radius: 10px;
+
+          input {
+            font-weight: 400;
+            font-size: 16px;
+            margin-left: 20px;
+            color: white;
+            max-width: 100%;
+            &::placeholder {
+              color: white;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .inActive {
+        overflow: hidden;
+        opacity: 0;
+      }
+    }
+  }
+}

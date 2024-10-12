@@ -1,0 +1,122 @@
+.container1 {
+  max-width: 1620px;
+  margin-top: 35vh;
+  h1 {
+    padding: 20px 0;
+    color: white;
+    font-size: 35px;
+  }
+  .ContMov {
+    height: 400px;
+    padding: 0 20px;
+
+    .BoxCard {
+      position: relative;
+      width: 250px;
+      min-height: 400px;
+      margin-left: 40px;
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .logo {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+      }
+      .imgUrl {
+        text-align: center;
+        img {
+          object-fit: contain;
+          width: 250px;
+          height: 100%;
+        }
+      }
+      &:hover {
+        scale: 0.95;
+        transition: 0.3s ease;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+      }
+      h3 {
+        color: #bdb76b;
+        position: absolute;
+        top: 120px;
+        margin-left: -20px;
+        left: 0;
+        font-size: 90px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        z-index: 10;
+      }
+    }
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 10;
+  top: 50%; /* Размещаем по центру */
+  transform: translateY(-45%); /* Смещаем относительно центра */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  font-size: 20px !important;
+  backdrop-filter: blur(10px) !important;
+  width: 30px !important; /* Узкая кнопка */
+  height: 360px !important; /* Вытянутая по высоте */
+  border: none; /* Без границ */
+  background-color: rgba(40, 40, 40, 0.493); /* Серо-матовый фон */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(60, 60, 60, 0.9); /* Больше насыщенности при наведении */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px !important; /* Размер стрелки */
+  color: rgba(255, 255, 255, 0.8) !important; /* Белый цвет стрелки */
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: rgba(30, 30, 30, 0.9); /* Темнее при клике */
+}
+
+.swiper-button-prev:active::after,
+.swiper-button-next:active::after {
+  color: rgba(255, 255, 255, 1) !important; /* Яркий белый при нажатии */
+}
+.swiper-wrapper {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+@media (max-width: 625px) {
+  .container1 {
+    margin-top: 27vh;
+  }
+}
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%; /* Убедитесь, что слайды растягиваются на всю ширину */
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: 100% !important; /* Убедитесь, что на маленьких экранах слайд занимает всю ширину */
+  }
+}

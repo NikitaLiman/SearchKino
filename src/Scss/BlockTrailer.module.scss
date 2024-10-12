@@ -1,0 +1,910 @@
+.container {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.851);
+
+  .Content {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0;
+
+    .Trailer {
+      display: flex;
+      .Load {
+        display: flex;
+        gap: 5px;
+        margin-right: 10px;
+        .YoutubeWrapper {
+          width: 870px;
+          height: 100%;
+        }
+        .Imgblock {
+          position: relative;
+          .BookMark {
+            background-color: black;
+            top: 0;
+            right: 0;
+            position: absolute;
+            transition: 0.3s ease;
+            cursor: pointer;
+            img {
+              width: 40px;
+              height: 100%;
+            }
+            &:hover {
+              transition: 0.3s ease;
+              background-color: #dc143cd0;
+            }
+            &:active {
+              scale: 0.95;
+            }
+          }
+        }
+        img {
+          border-radius: 20px;
+          width: 270px;
+          height: 100%;
+        }
+      }
+
+      .BLockCont {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .Blocks {
+          position: relative;
+          background-color: rgb(122, 122, 122);
+          width: 208px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s ease;
+          border-radius: 20px;
+          h1 {
+            letter-spacing: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+            color: rgb(245, 197, 24);
+          }
+          &:hover {
+            background-color: rgba(81, 81, 81, 1);
+            transition: 0.3s ease;
+          }
+          img {
+            object-fit: contain;
+          }
+          .ticket {
+            width: 80px;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .RowCont {
+      justify-content: space-between;
+      display: flex;
+      .TextBlock {
+        h1 {
+          color: white;
+          font-weight: 500;
+          font-size: 3rem;
+        }
+        h4 {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 0.8rem;
+        }
+      }
+      .RateBox {
+        display: flex;
+        gap: 30px;
+        img {
+          width: 30px;
+          height: 100%;
+        }
+        .Rating {
+          h1 {
+            letter-spacing: 1px;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+          }
+          .boxRate {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+            .Rate {
+              gap: 5px;
+              display: flex;
+              align-items: center;
+              transition: 0.3s ease;
+              border-radius: 20px;
+              p {
+                color: #6495ed;
+                font-weight: 500;
+                font-size: 1.25rem;
+              }
+              &:hover {
+                transition: 0.3s ease;
+                background-color: rgba(61, 61, 61, 1);
+                border-radius: 20px;
+              }
+            }
+
+            h2 {
+              color: white;
+              font-size: 1rem;
+            }
+            .VoteBox {
+              h2 {
+                color: white;
+                font-size: 1.25rem;
+                span {
+                  font-size: 1rem;
+                  color: rgba(255, 255, 255, 0.7);
+                }
+              }
+              h3 {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .TextDescrive {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .TextGenre {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .ClassNone {
+        display: none;
+      }
+      .contText {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .PosterNone {
+          display: none;
+        }
+      }
+      ul {
+        display: flex;
+        gap: 10px;
+        li {
+          padding: 5px;
+          background-color: transparent;
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.485);
+          color: white;
+          transition: 0.3s ease;
+          &:hover {
+            transition: 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.58);
+          }
+        }
+      }
+      p {
+        letter-spacing: 0.8px;
+        font-weight: 500;
+        color: white;
+      }
+      .Return {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.851);
+
+    .Content {
+      padding: 10px;
+      margin: 0 auto;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 100px 0;
+
+      .Trailer {
+        display: flex;
+        .Load {
+          display: flex;
+          gap: 5px;
+          margin-right: 10px;
+          .YoutubeWrapper {
+            height: 100%;
+            width: 600px;
+          }
+          .Imgblock {
+            position: relative;
+            .BookMark {
+              background-color: black;
+              top: 0;
+              right: 0;
+              position: absolute;
+              transition: 0.3s ease;
+              cursor: pointer;
+              img {
+                width: 40px;
+                height: 100%;
+              }
+              &:hover {
+                transition: 0.3s ease;
+                background-color: #dc143cd0;
+              }
+              &:active {
+                scale: 0.95;
+              }
+            }
+          }
+          img {
+            border-radius: 20px;
+            width: 220px;
+            height: 100%;
+          }
+        }
+
+        .BLockCont {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .Blocks {
+            position: relative;
+            background-color: rgb(122, 122, 122);
+            width: 180px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease;
+            border-radius: 20px;
+            h1 {
+              letter-spacing: 1px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin: 10px;
+              color: rgb(245, 197, 24);
+            }
+            &:hover {
+              background-color: rgba(81, 81, 81, 1);
+              transition: 0.3s ease;
+            }
+            img {
+              object-fit: contain;
+            }
+            .ticket {
+              width: 80px;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .RowCont {
+        justify-content: space-between;
+        display: flex;
+        width: 1015px;
+        .TextBlock {
+          h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 2.8rem;
+          }
+          h4 {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+          }
+        }
+        .RateBox {
+          display: flex;
+          gap: 30px;
+          img {
+            width: 30px;
+            height: 100%;
+          }
+          .Rating {
+            h1 {
+              letter-spacing: 1px;
+              font-size: 0.8rem;
+              color: rgba(255, 255, 255, 0.7);
+            }
+            .boxRate {
+              margin-top: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              gap: 5px;
+              .Rate {
+                gap: 5px;
+                display: flex;
+                align-items: center;
+                transition: 0.3s ease;
+                border-radius: 20px;
+                p {
+                  color: #6495ed;
+                  font-weight: 500;
+                  font-size: 1rem;
+                }
+                &:hover {
+                  transition: 0.3s ease;
+                  background-color: rgba(81, 81, 81, 1);
+                  border-radius: 20px;
+                }
+              }
+
+              h2 {
+                color: white;
+                font-size: 0.9rem;
+              }
+              .VoteBox {
+                h2 {
+                  color: white;
+                  font-size: 1rem;
+                  span {
+                    font-size: 1rem;
+                    color: rgba(255, 255, 255, 0.7);
+                  }
+                }
+                h3 {
+                  color: rgba(255, 255, 255, 0.7);
+                  font-size: 0.75rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .TextDescrive {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 1015px;
+        ul {
+          display: flex;
+          gap: 10px;
+          li {
+            padding: 5px;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.485);
+            color: white;
+            transition: 0.3s ease;
+            &:hover {
+              transition: 0.3s ease;
+              background-color: rgba(0, 0, 0, 0.58);
+            }
+          }
+        }
+        p {
+          letter-spacing: 0.8px;
+          font-weight: 500;
+          color: white;
+        }
+        .Return {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .container {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.851);
+
+    .Content {
+      margin: 0 auto;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 100px 10px;
+
+      .Trailer {
+        display: flex;
+        flex-wrap: wrap;
+        .Load {
+          display: flex;
+          flex-grow: 1;
+          margin-right: 10px;
+          .YoutubeWrapper {
+            height: 100%;
+            max-width: 800px;
+            flex: 1;
+          }
+          .Imgblock {
+            position: relative;
+            .BookMark {
+              background-color: black;
+              top: 0;
+              right: 0;
+              position: absolute;
+              transition: 0.3s ease;
+              cursor: pointer;
+              img {
+                width: 40px;
+                height: 100%;
+              }
+              &:hover {
+                transition: 0.3s ease;
+                background-color: #dc143cd0;
+              }
+              &:active {
+                scale: 0.95;
+              }
+            }
+          }
+          img {
+            border-radius: 20px;
+            width: 220px;
+            height: 100%;
+          }
+        }
+
+        .BLockCont {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+          gap: 10px;
+          transition: 0.3s ease-out;
+
+          .Blocks {
+            position: relative;
+            background-color: rgb(122, 122, 122);
+            width: 180px;
+            height: 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            transition: 0.3s ease;
+            flex: 1;
+            border-radius: 10px;
+            h1 {
+              letter-spacing: 1px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin: 10px;
+              color: rgb(245, 197, 24);
+              font-size: 10px;
+            }
+            &:hover {
+              background-color: rgba(81, 81, 81, 1);
+              transition: 0.3s ease;
+            }
+            img {
+              object-fit: contain;
+              width: 80px;
+            }
+            .ticket {
+              width: 80px;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .RowCont {
+        justify-content: start;
+        display: flex;
+        max-width: 1015px;
+        width: 100%;
+        padding: 0 10px;
+        .TextBlock {
+          h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 2.9rem;
+          }
+          h4 {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+          }
+        }
+        .RateBox {
+          display: none;
+          gap: 30px;
+        }
+      }
+      .TextDescrive {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 1015px;
+        width: 100%;
+        .ClassNone {
+          display: block;
+          .RateBox {
+            display: flex;
+            gap: 30px;
+            img {
+              width: 20px;
+              height: 100%;
+            }
+            .Rating {
+              h1 {
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.7);
+              }
+              .boxRate {
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .Rate {
+                  gap: 5px;
+                  display: flex;
+                  align-items: center;
+                  transition: 0.3s ease;
+                  border-radius: 20px;
+                  p {
+                    color: #6495ed;
+                    font-weight: 500;
+                    font-size: 1rem;
+                  }
+                  &:hover {
+                    transition: 0.3s ease;
+                    background-color: rgba(81, 81, 81, 1);
+                    border-radius: 20px;
+                  }
+                }
+
+                h2 {
+                  color: white;
+                  font-size: 0.9rem;
+                }
+                .VoteBox {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h2 {
+                    color: white;
+                    font-size: 1rem;
+                    span {
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.7);
+                    }
+                  }
+                  h3 {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 0.75rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        ul {
+          display: flex;
+          gap: 10px;
+          li {
+            padding: 5px;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.485);
+            color: white;
+            transition: 0.3s ease;
+            &:hover {
+              transition: 0.3s ease;
+              background-color: rgba(0, 0, 0, 0.58);
+            }
+          }
+        }
+        p {
+          letter-spacing: 0.8px;
+          font-weight: 500;
+          color: white;
+        }
+        .Return {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .container {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.851);
+
+    .Content {
+      margin: 0 auto;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 100px 10px;
+
+      .Trailer {
+        display: flex;
+        flex-wrap: wrap;
+        .Load {
+          display: flex;
+          flex-grow: 1;
+          margin-right: 10px;
+          .YoutubeWrapper {
+            height: 300px;
+            width: 100%;
+            flex: 1 1;
+          }
+          .Imgblock {
+            display: none;
+            position: relative;
+            .BookMark {
+              background-color: black;
+              top: 0;
+              right: 0;
+              position: absolute;
+              transition: 0.3s ease;
+              cursor: pointer;
+              img {
+                width: 40px;
+                height: 100%;
+              }
+              &:hover {
+                transition: 0.3s ease;
+                background-color: #dc143cd0;
+              }
+              &:active {
+                scale: 0.95;
+              }
+            }
+          }
+          img {
+            object-fit: cover;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .BLockCont {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: row;
+          flex-grow: 1;
+          gap: 10px;
+          transition: 0.3s ease-out;
+
+          .BLockCont {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            transition: 0.3s ease-out;
+
+            .Blocks {
+              position: relative;
+              background-color: rgb(122, 122, 122);
+              width: 100%; // Устанавливаем на всю ширину
+              height: 20px;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              transition: 0.3s ease;
+              flex-grow: 1; // Позволяет блоку расширяться
+              border-radius: 10px;
+
+              h1 {
+                letter-spacing: 1px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 10px;
+                color: rgb(245, 197, 24);
+                font-size: 10px;
+              }
+
+              &:hover {
+                background-color: rgba(81, 81, 81, 1);
+                transition: 0.3s ease;
+              }
+
+              img {
+                object-fit: contain;
+                width: 80px;
+              }
+
+              .ticket {
+                width: 80px;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+      .RowCont {
+        justify-content: start;
+        display: flex;
+        max-width: 1015px;
+        width: 100%;
+        padding: 0 10px;
+        .TextBlock {
+          h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 2.5rem;
+          }
+          h4 {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+          }
+        }
+        .RateBox {
+          display: none;
+          gap: 30px;
+        }
+      }
+      .TextDescrive {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 1015px;
+        width: 100%;
+        .contText {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          .PosterNone {
+            display: block;
+            max-width: 180px;
+            .Imgblock {
+              position: relative;
+              width: 140px;
+              .BookMark {
+                background-color: black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                transition: 0.3s ease;
+                cursor: pointer;
+                img {
+                  width: 40px;
+                  height: 100%;
+                }
+                &:hover {
+                  transition: 0.3s ease;
+                  background-color: #dc143cd0;
+                }
+                &:active {
+                  scale: 0.95;
+                }
+              }
+            }
+            img {
+              border-radius: 20px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .ClassNone {
+          display: block;
+          .RateBox {
+            display: flex;
+            gap: 30px;
+            img {
+              width: 20px;
+              height: 100%;
+            }
+            .Rating {
+              h1 {
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.7);
+              }
+              .boxRate {
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .Rate {
+                  gap: 5px;
+                  display: flex;
+                  align-items: center;
+                  transition: 0.3s ease;
+                  border-radius: 20px;
+                  p {
+                    color: #6495ed;
+                    font-weight: 500;
+                    font-size: 1rem;
+                  }
+                  &:hover {
+                    transition: 0.3s ease;
+                    background-color: rgba(81, 81, 81, 1);
+                    border-radius: 20px;
+                  }
+                }
+
+                h2 {
+                  color: white;
+                  font-size: 0.9rem;
+                }
+                .VoteBox {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h2 {
+                    color: white;
+                    font-size: 1rem;
+                    span {
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.7);
+                    }
+                  }
+                  h3 {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 0.75rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .GenreId {
+          ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            li {
+              flex: 1 1;
+
+              min-width: 66px;
+              padding: 5px;
+              background-color: transparent;
+              border-radius: 20px;
+              border: 1px solid rgba(255, 255, 255, 0.485);
+              color: white;
+              transition: 0.3s ease;
+              &:hover {
+                transition: 0.3s ease;
+                background-color: rgba(0, 0, 0, 0.58);
+              }
+            }
+          }
+        }
+
+        p {
+          letter-spacing: 0.8px;
+          font-weight: 500;
+          color: white;
+          overflow-y: scroll;
+          max-height: 171px;
+        }
+        .Return {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

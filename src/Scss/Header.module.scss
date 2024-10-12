@@ -1,0 +1,519 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  padding: 5px 5px;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.674);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  .content {
+    max-width: 1480px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      align-items: center;
+      gap: 60px;
+      display: flex;
+      .title {
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s ease;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .ClickBlock {
+          top: -5px;
+          right: 0;
+          padding: 0px 10px;
+          background-color: rgba(12, 12, 12, 1);
+          height: 130px;
+          width: 100%;
+          position: absolute;
+          z-index: 2;
+          display: flex;
+          align-items: flex-end;
+          border-end-end-radius: 20px;
+          border-end-start-radius: 20px;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px 0;
+            li {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: white;
+            }
+          }
+        }
+        h1 {
+          font-size: 40px;
+          color: white;
+          z-index: 3;
+        }
+        .globus {
+          width: 35px;
+          height: 35px;
+          border-radius: 100%;
+          background-size: 60px;
+          background-color: rgba(203, 200, 200, 0.853);
+          animation: rotate 3.5s infinite linear;
+          z-index: 3;
+        }
+        @keyframes rotate {
+          0% {
+            background-position-x: 0;
+          }
+          100% {
+            background-position-x: 60px;
+          }
+        }
+      }
+
+      .favXsol {
+        display: flex;
+        gap: 15px;
+        .Sol,
+        .Fav {
+          padding: 5px;
+          min-width: 135px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          h2 {
+            opacity: 0;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 20px;
+            color: white;
+            transition: 0.3s ease;
+          }
+          img {
+            width: 35px;
+            height: 100%;
+          }
+          &:hover {
+            border-radius: 10px;
+            transition: 0.3s ease;
+            background-color: rgb(22, 22, 22);
+
+            h2 {
+              transition: 0.3s ease;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .containerHam {
+      display: none;
+      height: 25px;
+      width: 2.2em;
+      .cotnentHam {
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .burgerBarUnClicked {
+          width: 2.2em;
+          background-color: white;
+          height: 0.2em;
+          border-radius: 20px;
+          transition: 0.3s ease;
+        }
+        .burgerBarClicked {
+          width: 2.2em;
+          background-color: rgba(92, 92, 92, 1);
+          height: 0.2em;
+          border-radius: 20px;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+  .Search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    h1 {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      span {
+        img {
+          width: 35px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.menu__hidden {
+  display: none;
+}
+.menu__visible {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.674);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    padding: 5px 5px;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.674);
+    backdrop-filter: blur(10px);
+    .content {
+      max-width: 1280px;
+      margin: 0 auto;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        align-items: center;
+        gap: 60px;
+        display: flex;
+        .title {
+          cursor: pointer;
+          position: relative;
+          transition: 0.3s ease;
+          padding: 10px 10px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .ClickBlock {
+            top: -5px;
+            right: 0;
+            padding: 0px 10px;
+            background-color: rgba(12, 12, 12, 1);
+            height: 130px;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            border-end-end-radius: 20px;
+            border-end-start-radius: 20px;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              padding: 10px 0;
+              li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: white;
+              }
+            }
+          }
+          h1 {
+            font-size: 40px;
+            color: white;
+            z-index: 3;
+          }
+          .globus {
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background-size: 60px;
+            background-color: rgba(203, 200, 200, 0.853);
+            animation: rotate 3.5s infinite linear;
+            z-index: 3;
+          }
+          @keyframes rotate {
+            0% {
+              background-position-x: 0;
+            }
+            100% {
+              background-position-x: 60px;
+            }
+          }
+        }
+
+        .favXsol {
+          display: flex;
+          gap: 15px;
+          .Sol,
+          .Fav {
+            padding: 5px;
+            min-width: 135px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            h2 {
+              opacity: 0;
+              letter-spacing: 1px;
+              font-weight: 500;
+              font-size: 20px;
+              color: white;
+              transition: 0.3s ease;
+            }
+            img {
+              width: 35px;
+              height: 100%;
+            }
+            &:hover {
+              border-radius: 10px;
+              transition: 0.3s ease;
+              background-color: rgb(22, 22, 22);
+
+              h2 {
+                transition: 0.3s ease;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    padding: 10px 5px;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.674);
+    backdrop-filter: blur(10px);
+    .content {
+      max-width: 1280px;
+      margin: 0 auto;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        align-items: center;
+        gap: 60px;
+        display: flex;
+        .title {
+          cursor: pointer;
+          position: relative;
+          transition: 0.3s ease;
+          padding: 10px 10px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .ClickBlock {
+            top: -5px;
+            right: 0;
+            padding: 0px 10px;
+            background-color: rgba(12, 12, 12, 1);
+            height: 130px;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            border-end-end-radius: 20px;
+            border-end-start-radius: 20px;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              padding: 10px 0;
+              li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: white;
+              }
+            }
+          }
+          h1 {
+            font-size: 30px;
+            color: white;
+            z-index: 3;
+          }
+          .globus {
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background-size: 60px;
+            background-color: rgba(203, 200, 200, 0.853);
+            animation: rotate 3.5s infinite linear;
+            z-index: 3;
+          }
+          @keyframes rotate {
+            0% {
+              background-position-x: 0;
+            }
+            100% {
+              background-position-x: 60px;
+            }
+          }
+        }
+
+        .favXsol {
+          display: none;
+          gap: 15px;
+          .Sol,
+          .Fav {
+            padding: 5px;
+            min-width: 135px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            h2 {
+              opacity: 0;
+              letter-spacing: 1px;
+              font-weight: 500;
+              font-size: 20px;
+              color: white;
+              transition: 0.3s ease;
+            }
+            img {
+              width: 35px;
+              height: 100%;
+            }
+            &:hover {
+              border-radius: 10px;
+              transition: 0.3s ease;
+              background-color: rgb(22, 22, 22);
+
+              h2 {
+                transition: 0.3s ease;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .Search {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        h1 {
+          color: white;
+          display: none;
+          align-items: center;
+          gap: 5px;
+          span {
+            img {
+              width: 35px;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .containerHam {
+        display: block;
+        height: 25px;
+        width: 2.2em;
+
+        .cotnentHam {
+          height: 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .burgerBarUnClicked {
+            width: 2.2em;
+            background-color: white;
+            height: 0.2em;
+            border-radius: 20px;
+            transition: 0.3s ease;
+          }
+          .burgerBarClicked {
+            width: 2.2em;
+            background-color: rgba(92, 92, 92, 1);
+            height: 0.2em;
+            border-radius: 20px;
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+  .menu__visible {
+    display: block;
+    .contentMenu {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+      margin: 80px 10px;
+      .favXsolHam {
+        border-radius: 20px;
+        max-width: 700px;
+        width: 100%;
+        background-color: rgba(92, 92, 92, 1);
+        transition: 0.3s ease;
+        .FavHam {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 120px;
+            height: 100%;
+          }
+          h2 {
+            color: white;
+            font-size: 30px;
+          }
+        }
+        &:hover {
+          transition: 0.3s ease;
+          background-color: rgb(50, 50, 50);
+        }
+      }
+      .signInHam {
+        border-radius: 20px;
+        max-width: 700px;
+        width: 100%;
+        background-color: rgba(92, 92, 92, 1);
+        transition: 0.3s ease;
+        h1 {
+          font-size: 30px;
+
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          span {
+            img {
+              width: 120px;
+              height: 100%;
+            }
+          }
+        }
+        &:hover {
+          transition: 0.3s ease;
+          background-color: rgb(50, 50, 50);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.container {
+  position: relative;
+  margin: 180px auto;
+  max-width: 1480px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 10px;
+
+  .Content {
+    min-height: 40vh;
+    position: relative;
+    display: flex;
+    padding: 50px 10px;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .ClearBox {
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 10px;
+
+    h2 {
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ff6f6f;
+      }
+    }
+  }
+
+  &__Box {
+    width: 240px;
+    height: 405px;
+    background-color: rgb(12, 12, 22);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .Rate {
+      padding: 5px 10px;
+      margin: 20px 10px;
+      top: 0;
+      left: 0;
+      background: #f6be00;
+      position: absolute;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      h3 {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .BookMark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px 10px;
+      background-color: #dc143cd0;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      &:hover {
+        background-color: black;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 220px;
+      height: 300px;
+      border-radius: 5px;
+    }
+
+    .TextBlock {
+      padding: 10px;
+      text-align: center;
+
+      h1 {
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      h3 {
+        color: #d3d3d3;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    position: relative;
+    margin: 180px auto;
+    max-width: 1480px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 10px;
+
+    .Content {
+      min-height: 40vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 50px 10px;
+      gap: 50px;
+      flex-wrap: wrap;
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .ClearBox {
+      cursor: pointer;
+      top: 0;
+      right: 0;
+      position: absolute;
+      margin: 10px;
+
+      h2 {
+        color: white;
+        font-size: 20px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ff6f6f;
+        }
+      }
+    }
+
+    &__Box {
+      width: 240px;
+      height: 405px;
+      background-color: rgb(12, 12, 22);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .Rate {
+        padding: 5px 10px;
+        margin: 20px 10px;
+        top: 0;
+        left: 0;
+        background: #f6be00;
+        position: absolute;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        h3 {
+          color: black;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+
+      .BookMark {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px 10px;
+        background-color: #dc143cd0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        &:hover {
+          background-color: black;
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+
+      img {
+        object-fit: cover;
+        width: 220px;
+        height: 300px;
+        border-radius: 5px;
+      }
+
+      .TextBlock {
+        padding: 10px;
+        text-align: center;
+
+        h1 {
+          color: white;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        h3 {
+          color: #d3d3d3;
+          font-weight: 500;
+          font-size: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

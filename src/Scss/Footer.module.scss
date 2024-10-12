@@ -1,0 +1,109 @@
+.container {
+  max-width: 1620px;
+  .content {
+    padding: 10px 0;
+    border-top: 2px solid hsl(0deg 0% 100% / 10%);
+    border-bottom: 2px solid hsl(0deg 0% 100% / 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        transition: 0.3s ease;
+        width: 25px;
+        height: 100%;
+        &:hover {
+          transition: 0.3s ease;
+          scale: 1.1;
+        }
+      }
+    }
+    h1 {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.581);
+      font-weight: 600;
+    }
+  }
+  .containersecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    .textStyle {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      P {
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.581);
+      }
+    }
+    h1 {
+      color: rgba(255, 255, 255, 0.581);
+      font-weight: 500;
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 870px) {
+  .container {
+    max-width: 1620px;
+    .content {
+      padding: 10px 0;
+      border-top: 2px solid hsl(0deg 0% 100% / 10%);
+      border-bottom: 2px solid hsl(0deg 0% 100% / 10%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img {
+          transition: 0.3s ease;
+          width: 25px;
+          height: 100%;
+          &:hover {
+            transition: 0.3s ease;
+            scale: 1.1;
+          }
+        }
+      }
+      h1 {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.581);
+        font-weight: 600;
+      }
+    }
+    .containersecond {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0px;
+      .textStyle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        P {
+          font-size: 12px;
+          letter-spacing: 1px;
+          color: rgba(255, 255, 255, 0.581);
+        }
+      }
+      h1 {
+        color: rgba(255, 255, 255, 0.581);
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}

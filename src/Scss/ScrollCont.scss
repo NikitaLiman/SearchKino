@@ -1,0 +1,114 @@
+.containerSC {
+  max-width: 1520px;
+  margin: 0 auto;
+  height: 100%;
+  h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .sliderscroll {
+    max-width: 1420px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      opacity: 0 !important;
+      transition: 0.4s ease !important;
+      position: absolute;
+      z-index: 10;
+      top: 50% !important; /* Размещаем по центру */
+      transform: translateY(-45%) !important; /* Смещаем относительно центра */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white !important;
+      font-size: 20px !important;
+      backdrop-filter: blur(10px) !important;
+      width: 30px !important; /* Узкая кнопка */
+      height: 360px !important; /* Вытянутая по высоте */
+      border: none; /* Без границ */
+      background-color: rgba(40, 40, 40, 0.493); /* Серо-матовый фон */
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background-color: rgba(60, 60, 60, 0.9); /* Больше насыщенности при наведении */
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 22px !important; /* Размер стрелки */
+      color: rgba(255, 255, 255, 0.8) !important; /* Белый цвет стрелки */
+    }
+
+    .swiper-button-prev:active,
+    .swiper-button-next:active {
+      background-color: rgba(30, 30, 30, 0.9); /* Темнее при клике */
+    }
+
+    .swiper-button-prev:active::after,
+    .swiper-button-next:active::after {
+      color: rgba(255, 255, 255, 1) !important; /* Яркий белый при нажатии */
+    }
+    .swiper-wrapper {
+      display: flex !important;
+      align-items: center !important;
+    }
+    .slider {
+      position: relative;
+      padding: 10px;
+      max-width: 280px;
+
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease;
+
+      h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 15px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.736);
+        background-color: #dc143c;
+        border-radius: 5px;
+      }
+      img {
+        object-fit: contain;
+        max-width: 250px;
+        height: 100%;
+      }
+      &:hover {
+        transition: 0.3s ease;
+        scale: 0.98;
+      }
+    }
+    &:hover {
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 1 !important;
+        transition: 0.4s ease !important;
+      }
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%; /* Убедитесь, что слайды растягиваются на всю ширину */
+}
+
+@media (max-width: 580px) {
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important; /* Убедитесь, что на маленьких экранах слайд занимает всю ширину */
+  }
+}
